@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = {
+            name : "rahul",
+            course : "web",
+            dob : "20-09-2005"
+        }
+        //console.log(student);
+        
+        let jsonData = JSON.stringify(student)
+        //console.log(jsonData);
+        
+        // let objData = JSON.parse(jsonData)
+        // console.log(objData)
+
+        localStorage.setItem("student",student)
+
+    </script>
+</body>
+</html>

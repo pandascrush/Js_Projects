@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>0</h1>
+    <button onclick="Increment()">+</button>
+    <button onclick="Decrement()">-</button>
+    <button onclick="Reset()">0</button>
+
+    <script>
+
+      let headEl = document.querySelector("h1");
+      let count  = 0
+
+      function Increment() {
+        count++
+        headEl.innerText = count
+      }
+      headEl.addEventListener('click',Increment())
+
+      function Decrement(){
+        count--
+        headEl.innerText = count
+      }
+      function Reset(){
+        count = 0
+        headEl.innerText = count
+      }
+
+    </script>
+  </body>
+</html>

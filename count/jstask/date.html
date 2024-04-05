@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="file.js
+    "></script> -->
+    <style>
+        .digiclock{
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            border: 10px ridge black;
+            background-color: darkblue;
+            color: white;    
+        }
+        h1{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body> 
+   <div class="digiclock">
+    <h1 id="hours"></h1>
+    <h1>:</h1>
+    <h1 id="minutes"></h1>
+    <h1>:</h1>
+    <h1 id="seconds"></h1>
+   </div>
+   <script>
+    let date=new Date()//current date
+ 
+    // let h=date.getHours()//current hour
+    // document.getElementById("hours").innerHTML=h
+    // let m=date.getMinutes()
+    // document.getElementById("minutes").innerHTML=m
+    // let s=date.getSeconds()
+    // document.getElementById("seconds").innerHTML=setInterval(()=>{    
+    // },1000)
+
+    //first date of the month
+    let hurdate=new Date(date.getFullYear(),date.getMonth())
+    document.write(hurdate,"<br/>")
+
+    //last date of the month
+    let lastdate=new Date(date.getFullYear(),date.getMonth()+1,0)
+    document.write(lastdate)
+    
+    
+
+   
+
+   </script>
+</body>
+</html>

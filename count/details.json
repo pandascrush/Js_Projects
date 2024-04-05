@@ -1,0 +1,14 @@
+[
+    {
+        "name" :"sibu",
+        "course" : "MCA"
+    },
+    {
+        "name" :"rahul",
+        "course" :"MCA"
+    },
+    {
+        "name":"Aravind",
+        "course":"B.Sc"
+    }
+]
